@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    h1{
+        text-align: center;
+        margin-top: 50px; 
+    }
+    .big{
+        border: 1px 1px solid red;
+        width: 70%;
+        margin: 0 auto;
+        height: 700px;
+        box-shadow: 10px 5px 10px 5px #888888;
+    }
+    .left{
+        /* border: 1px solid blue; */
+        height: 550px;
+        width: 330px;
+        margin-top: 50px;
+        margin-left: 100px;
+        float: left;
+    }
+    img{
+        width: 130px;
+        height: 180px;;
+        margin-top: 20px;
+        margin-left: 60px;  
+    }
+    .right{
+        padding-top: 50px;
+        /* margin-top: 50px; */
+        margin-left: 60px;
+    }
+    .right div{
+        font-size: 20px;
+        margin-top: 10px;
+        padding-top: 20px;
+    }
+    </style>
+</head>
+<body>
+    <h1>{{playerInfoList[0][0].split(";")[0]}} 详细信息</h1>
+    <div class="big">
+        <div class="left">
+            <div><img src="{{playerInfoList[0][4]}}" /></div>
+        </div>
+        <div class="right">
+            <div>球队：{{playerInfoList[0][1]}}</div>
+            <div>号码：{{playerInfoList[0][2]}}</div>
+            <div>{{playerInfoList[0][3]}}</div>
+            <div>身高：{{playerInfoList[0][5]}}</div>
+            <div>体重：{{playerInfoList[0][6]}}</div>
+            <div>位置：{{playerInfoList[0][7]}}</div>
+            <div>生日：{{playerInfoList[0][8]}}</div>
+            <div>选秀：{{playerInfoList[0][9]}}</div>
+            <div>{{playerInfoList[0][10]}}</div>
+            <div>{{playerInfoList[0][11]}}</div>
+        </div>
+        
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>nbaTeams</title>
+    <script type=text/javascript src="{{url_for('static',filename='js/jquery.js')}}"></script> 
+    <script>
+        $(document).ready(function(){
+            $(".ck").click(function(){
+                var keyWord = $(this).attr("name") 
+                // alert(keyWord)
+                window.location.href="/NBATeam/"+keyWord
+            });
+            var list1=[["one1","one2","one3","one4","one5"],["two1","two2","two3","two4","two5"],
+                        ["three1","three2","three3","three4","three5"],["four1","four2","four3","four4","four5"],
+                        ["five1","five2","five3","five4","five5"],["six1","six2","six3","six4","six5"]]
+
+            
+
+
+
+
+        })
+
+
+    
+    </script>  
+    <style>
+    h1{
+        width: 100%;
+        text-align: center;
+    }
+    table{
+        border-collapse:separate;
+        margin: 20px auto;
+        border-spacing:60px 20px;
+    }
+
+    table tr td{
+        border: 1px solid black;
+        text-align:center;
+        margin: 15px;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        /* background-color: blueviolet; */
+    }
+    td{
+       padding: 40px;
+       font-size: 25px;
+       color: brown;
+       font-weight: bolder;
+    }
+    tr td:nth-child(1){
+        background-color: aliceblue;
+    }
+    #maci{
+        background: url("static/imageNBA/one1.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #tihu{
+        background: url("static/imageNBA/one2.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #huiciong{
+        background: url("static/imageNBA/one3.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #xiaoniu{
+        background: url("static/imageNBA/one4.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #huojian{
+        background: url("static/imageNBA/one5.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #yongshi{
+        background: url("static/imageNBA/two1.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #guowang{
+        background: url("static/imageNBA/two2.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #kuaichuan{
+        background: url("static/imageNBA/two3.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #huren{
+        background: url("static/imageNBA/two4.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #taiyang{
+        background: url("static/imageNBA/two5.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #juejin{
+        background: url("static/imageNBA/three1.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #kaituozhe{
+        background: url("static/imageNBA/three2.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #jueshi{
+        background: url("static/imageNBA/three3.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #senlinlang{
+        background: url("static/imageNBA/three4.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #leiting{
+        background: url("static/imageNBA/three5.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #menglong{
+        background: url("static/imageNBA/four1.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #kaierteren{
+        background: url("static/imageNBA/four2.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #ren{
+        background: url("static/imageNBA/four3.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #nikesi{
+        background: url("static/imageNBA/four4.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #lanwang{
+        background: url("static/imageNBA/four5.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #huangfeng{
+        background: url("static/imageNBA/five1.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #rehuo{
+        background: url("static/imageNBA/five2.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #moshu{
+        background: url("static/imageNBA/five3.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #laoying{
+        background: url("static/imageNBA/five4.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #qicai{
+        background: url("static/imageNBA/five5.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #xionglu{
+        background: url("static/imageNBA/six1.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #huosai{
+        background: url("static/imageNBA/six2.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #buxingzhe{
+        background: url("static/imageNBA/six3.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #gongniu{
+        background: url("static/imageNBA/six4.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    #qishi{
+        background: url("static/imageNBA/six5.png") no-repeat 35px 35px;
+        background-color: blue;
+        opacity: 0.8;
+    }
+    </style>
+</head>
+<body>
+    <h1>NBA球队总览表</h1>
+<table>
+    
+    <tr>
+        <td>西南赛区</td>
+        <td id="maci" class="ck" name="圣安东尼奥马刺"></td>
+        <td id="tihu" class="ck" name="新奥尔良鹈鹕"></td>
+        <td id="huiciong" class="ck" name="孟菲斯灰熊"></td>
+        <td id="xiaoniu" class="ck" name="达拉斯独行侠"></td>
+        <td id="huojian" class="ck" name="休斯顿火箭"></td>
+    </tr>
+    <tr>
+        <td>太平洋赛区</td>
+        <td id="yongshi" class="ck" name="金州勇士"></td>
+        <td id="guowang" class="ck" name="洛杉矶快船"></td>
+        <td id="kuaichuan" class="ck" name="萨克拉门托国王"></td>
+        <td id="huren" class="ck" name="洛杉矶湖人"></td>
+        <td id="taiyang" class="ck" name="菲尼克斯太阳"></td>
+    </tr>
+    <tr>
+        <td>西北赛区</td>
+        <td id="juejin" class="ck" name="丹佛掘金"></td>
+        <td id="kaituozhe" class="ck" name="犹他爵士"</td>
+        <td id="jueshi" class="ck" name="波特兰开拓者"></td>
+        <td id="senlinlang" class="ck" name="明尼苏达森林狼"></td>
+        <td id="leiting" class="ck" name="俄克拉荷马城雷霆"></td>
+    </tr>
+    <tr>
+        <td>大西洋赛区</td>
+        <td id="menglong" class="ck" name="多伦多猛龙"></td>
+        <td id="kaierteren" class="ck" name="波士顿凯尔特人"></td>
+        <td id="ren" class="ck" name="费城76人"></td>
+        <td id="nikesi" class="ck" name="布鲁克林篮网"></td>
+        <td id="lanwang" class="ck" name="纽约尼克斯"></td>
+    </tr>
+    <tr>
+        <td>东南赛区</td>
+        <td id="huangfeng" class="ck" name="迈阿密热火"></td>
+        <td id="rehuo" class="ck" name="夏洛特黄蜂"></td>
+        <td id="moshu" class="ck" name="奥兰多魔术"></td>
+        <td id="laoying" class="ck" name="亚特兰大老鹰"></td>
+        <td id="qicai" class="ck" name="华盛顿奇才"></td>
+    </tr>
+    <tr>
+        <td>中部赛区</td>
+        <td id="xionglu" class="ck" name="密尔沃基雄鹿"></td>
+        <td id="huosai" class="ck" name="底特律活塞"></td>
+        <td id="buxingzhe" class="ck" name="印第安纳步行者"></td>
+        <td id="gongniu" class="ck" name="芝加哥公牛"></td>
+        <td id="qishi" class="ck" name="克利夫兰骑士"></td>
+    </tr>
+    
+</table>
+</body>
+</html>

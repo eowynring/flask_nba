@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>newsDetail</title>
+</head>
+<style>
+    .detailTitle {
+        width: 100%;
+        text-align: center;
+    }
+
+    .detailTime {
+        width: 100%;
+        height: 40px;
+        text-align: center;
+    }
+
+    .detailImg {
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    .detailImg img {
+        width: 700px;
+        height: 500px;
+        margin: 0 auto;
+        border-radius: 50px;
+    }
+
+    .detailCon {
+        width: 1100px;
+        margin: 0 auto;
+    }
+
+    .detailCon p {
+        font-size: 20px;
+        text-indent: 2em;
+        line-height: 50px;
+    }
+
+    .detailEditor {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .detailEditor p {
+        width: 200px;
+        margin: 0 auto;
+        font-size: 20px;
+        /* margin-right: 1400px; */
+    }
+</style>
+
+<body>
+    <div class="detailTitle">
+        <h1>{{detail_datas[0]}}</h1>
+    </div>
+    <div class="detailTime">
+        <p>发布时间：{{detail_datas[1]}}</p>
+    </div>
+    <div class="detailImg">
+        <img src={{detail_datas[2]}}>
+    </div>
+    <div class="detailCon">
+        <P>{{detail_datas[3]}}</P>
+    </div>
+    <div class="detailEditor">
+        <P>{{detail_datas[5]}}</P>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>players</title>
+    <script type=text/javascript src="{{url_for('static',filename='js/jquery.js')}}"></script> 
+    <script>
+        $(document).ready(function(){
+            $(".small").click(function(){
+                var numId= $(this).find("#numId").text()
+                window.location.href="/NBATeam/NBAplayersInfo/"+numId
+            });
+        })
+    </script>
+    <style>
+    h1{
+        text-align: center;
+        margin-top: 50px; 
+    }
+    .big{
+        width: 1600px;
+        height: 760px;
+        text-align: center;
+        /* margin: 0 auto; */
+        margin:  0 auto;
+        /* background-color: bisque; */
+    }
+    p{
+        /* float: left; */
+        font-size: 20px;
+    }
+ 
+    img{
+        /* width: 100px;
+        height: 100px; */
+        margin-top: 30px;
+    }
+    .small{
+        border: 1px solid black;
+        width: 250px;
+        height: 250px;
+        float: left;
+        /* margin-top: 20px; */
+    }
+    .chinaName{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    
+    </style>
+</head>
+<body>
+    <h1>球队详细球员</h1>
+    <div class="big">
+        {% for i in playerList%}
+        
+        <div class="small">
+            <p id="numId" hidden="hidden">{{i[0]}}</p>
+            <img src="{{i[2]}}"></p>
+            <p class="chinaName">{{i[1].split(";")[0]}}</p>
+            <p>{{i[1].split(";")[1]}}</p>
+            
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
