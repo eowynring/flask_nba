@@ -1,4 +1,4 @@
 ### Flask-nba
-#### ⌚时间：Dec. 30. 2018
-#### 📃技术栈：MySQL+Flask+Scrapy
-#### 🎨功能： 这是一个 python 爬虫小项目。爬取虎扑网站现役所有球星资料，并用Flask渲染页面，实现数据的可视化。
+#### ⌚time：Dec. 30. 2018
+#### 📃stack：MySQL+Flask+Scrapy
+#### 🎨futrue： This is a small Python crawler project. Crawl the data of all active stars on Hupu website, and render the page with flash to realize the visualization of data.
